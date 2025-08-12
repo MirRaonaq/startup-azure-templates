@@ -1,8 +1,7 @@
 # Startup Bicep Template: Secure Virtual Network
 
 ## Overview
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MirRaonaq/startup-bicep-templates/master/vnet-template/main.json)
-
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMirRaonaq%2Fstartup-azure-templates%2Frefs%2Fheads%2Fmaster%2Fvnet-template%2Fmain.json)
 This template provisions a secure Azure Virtual Network (VNet) for a startup, including a subnet and a Network Security Group (NSG). It is designed to follow the Azure Well-Architected Framework and Zero Trust principles.
 
 ## Why This Design?
