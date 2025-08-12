@@ -1,31 +1,39 @@
-# Startup Bicep Template: Secure Virtual Network
 
-## Overview
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MirRaonaq/startup-bicep-templates/master/main.json)
+# Azure Startup Templates Repository
 
-This template provisions a secure Azure Virtual Network (VNet) for a startup, including a subnet and a Network Security Group (NSG). It is designed to follow the Azure Well-Architected Framework and Zero Trust principles.
+Welcome to a curated collection of ARM and Bicep templates designed to help startups quickly and securely get started on Microsoft Azure.
 
-## Why This Design?
-- **Virtual Network (VNet):** Provides network isolation and a private address space for your cloud resources. Tags for `environment` and `owner` support operational excellence and cost management.
-- **Subnet:** Segments the VNet for logical separation of workloads. Attaching an NSG at the subnet level enforces security boundaries.
-- **Network Security Group (NSG):** Implements Zero Trust by denying all inbound traffic by default. You can add rules to allow only trusted sources as needed. This minimizes attack surface and enforces least privilege.
+## Purpose
+This repository provides ready-to-deploy infrastructure templates for common startup scenarios, including networking, security, and foundational cloud resources. Each template is crafted to:
+- Accelerate cloud adoption for startups
+- Reduce misconfiguration risks
+- Promote best practices from day one
 
-## Well-Architected Framework Alignment
-- **Reliability:** Resource naming and tagging make management and automation easier.
-- **Security:** NSG denies all inbound traffic by default. No public IPs are assigned. Tags help with identity and access management.
-- **Cost Optimization:** Minimal configuration for a startup; only essential resources are provisioned.
-- **Operational Excellence:** Tags for environment and owner support resource tracking and automation.
-- **Performance Efficiency:** Default address space is scalable for future needs.
+## Well-Architected Framework (WAF) Alignment
+All templates in this repo are built to align with the Azure Well-Architected Framework:
+- **Reliability:** Resources are named and tagged for easy management and automation.
+- **Security:** Default configurations minimize exposure and enforce least privilege.
+- **Cost Optimization:** Templates are lean, focusing on essential resources to keep costs predictable.
+- **Operational Excellence:** Tagging and modular design support automation and resource tracking.
+- **Performance Efficiency:** Scalable address spaces and resource definitions support future growth.
 
 ## Zero Trust Principles
-- **No public IPs by default:** All resources are private unless explicitly exposed.
-- **Restrictive NSG rules:** Only allow traffic from trusted sources. Deny all others.
-- **Tagging:** Supports identity, access management, and automation.
+Security is foundational. These templates:
+- Deny public access by default
+- Use restrictive network security rules
+- Require explicit configuration for any external exposure
+- Leverage tagging for identity, access management, and automation
 
-## Next Steps
-- Add more NSG rules for trusted sources as your needs evolve.
-- Add more subnets for different workloads (e.g., web, database, management).
-- Integrate with Azure Firewall or other security services for advanced scenarios.
+## How to Use
+Browse the folders for different templates. Each folder contains:
+- A Bicep or ARM template
+- A README explaining the scenario and deployment steps
+- A Deploy to Azure button (where applicable) for one-click deployment
+
+## Why This Matters
+Startups need secure, reliable, and cost-effective cloud foundations. By using these templates, you:
+- Avoid common security pitfalls
+- Build on proven architectural patterns
+- Save time and focus on your core business
 
 ---
-For questions or customization, see comments in `main.bicep` or ask for guidance.
